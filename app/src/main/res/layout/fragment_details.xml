@@ -2,8 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="shoemodel"
+            type="com.udacity.shoestore.models.Shoe"/>
+    </data>
 
-<androidx.constraintlayout.widget.ConstraintLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/layout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,11 +25,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="TextView"
+            android:text="Add Shoe"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold|italic"
-            tools:text="Add Shoe" />
+            android:textStyle="bold|italic" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:text="@={shoemodel.name}"
                 android:hint="Superfly 2098"
                 android:inputType="text" />
         </LinearLayout>
@@ -73,7 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Nikee" />
+                android:hint="Nikee"
+                android:text="@={shoemodel.company}"/>
         </LinearLayout>
 
         <LinearLayout
@@ -98,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:text="@={shoemodel.size}"
                 android:hint="11"
                 android:inputType="none" />
         </LinearLayout>
@@ -125,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
+                android:text="@={shoemodel.description}"
                 android:hint="This shoe is really good, made in 2021 with the best advanced materials"
                 android:inputType="text"
                 android:textAlignment="textStart" />

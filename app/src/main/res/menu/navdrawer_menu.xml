@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/instructionsmenuitem"
+        android:id="@+id/instructions"
         android:title="Instructions" />
     <item
-        android:id="@+id/addshoemenuitem"
+        android:id="@+id/detailsFragment"
         android:title="add shoe" />
 </menu>
