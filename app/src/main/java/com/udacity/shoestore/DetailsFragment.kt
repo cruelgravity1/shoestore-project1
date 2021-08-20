@@ -19,7 +19,7 @@ import com.udacity.shoestore.models.Shoe
 class DetailsFragment : Fragment() {
 
     private val viewModel: DetailsFragmentViewmodel by activityViewModels()
-    var shoe:Shoe= Shoe("","","","") //shoe variable init
+    var shoe:Shoe= Shoe("","","","") //shoe variable initilization
     
 
 
